@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+}
+
+.product{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
