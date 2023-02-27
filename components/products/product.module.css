@@ -3,7 +3,18 @@
 }
 
 .product{
-    background-color: pink;
+    background: var(--white);
     display: flex;
     flex-direction: column;
+    padding: 1em;
+}
+
+.product:hover{
+    box-shadow: 0.5em 0.5em 1em var(--bcitblue);
+}
+
+.colourDot{
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 1em;
 }

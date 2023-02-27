@@ -1,11 +1,20 @@
 .main {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  font-family: var(--ssFont)
+}
+
+.main p:hover, .male li:hover, .female li:hover, .unisex li:hover{
+  font-weight: 600;
 }
 
 .nav{
   height: 5em;
   width: 100vw;
+  padding-bottom: 5em;
+  display: flex;
+  justify-content: center;
 }
 
 .logo{
@@ -13,10 +22,15 @@
 
 }
 
+.filter{
+  list-style-type: none;
+
+}
+
 .filterContainer{
-  background: lightblue;
+  background: var(--white);
   height: auto;
-  width: 40vw;
+  width: 30vw;
 }
 
 .products{
@@ -24,4 +38,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2em;
+  width: 50em;
+
 }
+
