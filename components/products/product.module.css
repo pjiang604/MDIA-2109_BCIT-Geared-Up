@@ -12,9 +12,3 @@
 .product:hover{
     box-shadow: 0.5em 0.5em 1em var(--bcitblue);
 }
-
-.colourDot{
-    height: 1.5em;
-    width: 1.5em;
-    border-radius: 1em;
-}

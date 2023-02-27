@@ -6,20 +6,16 @@ import { useState } from 'react'
 
 export default function Product({
 
-    img = "",
-    title = "",
-    colours = [],
-    hexCol = [],
+    img,
+    title,
     price = 0,
 
 }) {
 
-    const [circle, setCircle] = useState([...inventory.clothing]);
-    console.log("Circles", circle)
 
     return (
         <div className={styles.product}>
-            <Image src={img} width="200" height="200" />
+            <Image src={img} alt={img} width={200} height={200}/>
 
             <div>
                 <p>{title}</p>
@@ -28,19 +24,6 @@ export default function Product({
                 <p>{price}</p>
             </div>
             <div className={styles.colourDot}>
-                
-                {circle.colours && circle.colours.map((info, index) => {
-                    {
-                        return (
-                            <div key={index} className={styles.colourDot} style={{ backgroundColor: `${info}`}}>
-                                {index}
-                                {info}
-                                {hexCol}
-                            </div>
-                        )
-                    }
-                })}
-
             </div>
         </div>
 
