@@ -1,6 +1,6 @@
 import Image from "next/image"
 import styles from '../products/product.module.css'
-import { inventory } from '../../data/inventory'
+import { inventory } from '../../data/inventory.js'
 import { useState } from 'react'
 
 
@@ -14,7 +14,8 @@ export default function Product({
 
 }) {
 
-    const [circle, setCircle] = useState([inventory.clothing.hex]);
+    const [circle, setCircle] = useState([...inventory.clothing]);
+    console.log("Circles", circle)
 
     return (
         <div className={styles.product}>
@@ -27,13 +28,13 @@ export default function Product({
                 <p>{price}</p>
             </div>
             <div className={styles.colourDot}>
-                {circle && circle.map((info, index) => {
+                
+                {circle.colours && circle.colours.map((info, index) => {
                     {
                         return (
-                            <div className={styles.colourDot} style={{ backgroundColor: `${colours}`}}>
-                                <span key={index}></span>
+                            <div key={index} className={styles.colourDot} style={{ backgroundColor: `${info}`}}>
                                 {index}
-                                {colours}
+                                {info}
                                 {hexCol}
                             </div>
                         )
