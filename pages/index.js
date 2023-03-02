@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import { inventory } from '../data/inventory.js'
 import ProductImg from '../components/products'
-import Colours from '../components/Colours'
+import Colours from '../components/colours'
 import { useState, useEffect } from 'react'
 
 export default function Home() {
