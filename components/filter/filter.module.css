@@ -1,7 +1,0 @@
-.filter{ 
-    list-style-type: none;
-}
-
-.filter > li > ul {
-    list-style-type: none;
-}

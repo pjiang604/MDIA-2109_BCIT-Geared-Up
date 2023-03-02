@@ -43,7 +43,7 @@ export const inventory = {
             sex: "Male",
             title: "Forestry",
             colours: ["green"],
-            hex: ["24564A"],
+            hex: ["#24564A"],
             image: "/products/hoodies/hoodie_forestry_green.png",
             cost: 59.99,
         },

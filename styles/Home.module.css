@@ -1,44 +1,96 @@
 .main {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   font-family: var(--ssFont)
 }
 
-.main p:hover, .male li:hover, .female li:hover, .unisex li:hover{
-  font-weight: 600;
-}
 
-.nav{
+.nav {
   height: 5em;
   width: 100vw;
-  padding-bottom: 5em;
+  padding-bottom: 2em;
   display: flex;
   justify-content: center;
 }
 
-.logo{
+.logo {
   object-fit: contain;
 
 }
 
-.filter{
-  list-style-type: none;
 
-}
-
-.filterContainer{
+.filterContainer {
   background: var(--white);
   height: auto;
-  width: 30vw;
+  text-align: center;
 }
 
-.products{
+.products {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2em;
-  width: 50em;
+  justify-content: center;
+  gap: 5em;
+  border-radius: 10em;
+  margin-top: 2em;
 
 }
 
+.male li:hover,
+.female li:hover,
+.unisex li:hover {
+  font-weight: 600;
+  list-style-type: none;
+}
+
+.filter,
+.male,
+.female,
+.unisex {
+  list-style-type: none;
+  padding: 0.5em;
+  display: flex;
+  gap: 4em;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.maleTag{
+  color: var(--bcitblue);
+}
+
+.femaleTag{
+  color: var(--pink);
+}
+
+.unisexTag{
+  color: var(--green);
+}
+
+.female {
+  border-left: 1px solid var(--bcitblue);
+  border-right: 1px solid var(--bcitblue);
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.colours {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+
+.titleCard {
+  display: flex;
+  flex-direction: column;
+  color: var(--bcitblue);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1.5em;
+}
