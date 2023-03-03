@@ -1,6 +1,7 @@
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: left;
   font-family: var(--ssFont)
 }
 
@@ -8,7 +9,7 @@
 .nav {
   height: 5em;
   width: 100vw;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   display: flex;
   justify-content: center;
 }
@@ -21,6 +22,7 @@
 
 .filterContainer {
   background: var(--white);
+  width: 40em;
   height: auto;
   text-align: center;
 }
@@ -29,10 +31,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 5em;
   border-radius: 10em;
   margin-top: 2em;
+  width: 60em;
 
 }
 
@@ -41,6 +43,7 @@
 .unisex li:hover {
   font-weight: 600;
   list-style-type: none;
+  cursor: pointer;
 }
 
 .filter,
@@ -48,9 +51,10 @@
 .female,
 .unisex {
   list-style-type: none;
-  padding: 0.5em;
+  padding: 0.5em 0em;
+  gap: 0.5em;
   display: flex;
-  gap: 4em;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
 
@@ -58,19 +62,20 @@
 
 .maleTag{
   color: var(--bcitblue);
+  cursor: pointer;
 }
 
 .femaleTag{
   color: var(--pink);
+  cursor: pointer;
 }
 
 .unisexTag{
   color: var(--green);
+  cursor: pointer;
 }
 
 .female {
-  border-left: 1px solid var(--bcitblue);
-  border-right: 1px solid var(--bcitblue);
   padding-left: 4em;
   padding-right: 4em;
 }
@@ -93,4 +98,28 @@
   flex-direction: column;
   gap: 1em;
   margin-top: 1.5em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .filterContainer {
+    width: 30em;
+  }
+
+  .products{
+    width: 70em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .main{
+    flex-direction: column;
+  }
+  .filterContainer {
+    width: auto;
+  }
+
+  .products{
+    width: auto;
+    justify-content: center;
+  }
 }

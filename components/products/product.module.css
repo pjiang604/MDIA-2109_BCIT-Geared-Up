@@ -8,4 +8,5 @@
 
 .product:hover{
     box-shadow: 0.15em 0.15em .5em var(--bcitblue);
+    cursor: pointer;
 }
