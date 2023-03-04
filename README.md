@@ -6,7 +6,7 @@
 
 This one-page website was created using [Next.js13] framework (https://www.google.com/search?client=firefox-b-d&q=nextjs13). Responsiveness applied for desktop, tablet, and mobile.
 
-Product image and colour dot were created using Javascript components. The main page used imported React component useState, Head, and Image.
+Product image, colour dot, and nav bar were created using Javascript components. The main page used imported React components useState, Head, and Image.
 
 Images and data were provided by instructor Monika on BCIT's D2L platform.
 
